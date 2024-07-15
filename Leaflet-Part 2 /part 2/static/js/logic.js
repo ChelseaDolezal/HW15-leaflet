@@ -37,7 +37,7 @@ d3.json(url).then(function(data) {
 // Create a marker with size and color based on earthquake data
         L.circleMarker([coordinates[1], coordinates[0]], {
             radius: markerSize,
-            color: 'green',
+            color: 'black',
            fillColor: markerColor,
             fillOpacity: 0.7
         }).addTo(map).bindPopup(`Magnitude: ${magnitude}<br>Depth: ${depth}`);
