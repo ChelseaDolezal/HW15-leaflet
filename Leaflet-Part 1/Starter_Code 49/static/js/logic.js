@@ -3,7 +3,7 @@ const url = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.
 // Use d3.json() to fetch the JSON data
 d3.json(url).then(function(data) {
   // Once the data is loaded, you can work with it here
-  console.log(data); // Log the data to the console to see its structure
+  console.log(data); 
 
 
 
@@ -16,7 +16,7 @@ d3.json(url).then(function(data) {
 
 // Function to determine marker color based on depth
 function getColor(depth) {
-  const hue = depth > 50 ? 0 : 120 - (depth * 2.4); // Green to Red gradient
+  const hue = depth > 50 ? 0 : 120 - (depth * 2.4); 
   return `hsl(${hue}, 100%, 50%)`;
  
 }
